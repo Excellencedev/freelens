@@ -19,18 +19,18 @@
   "license": "MIT",
   "homepage": "https://freelens.app",
   "scripts": {
-    "build": "lens-webpack-build",
-    "build:dev": "lens-webpack-build",
+    "build": "node init && lens-webpack-build",
+    "build:dev": "node init && lens-webpack-build",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules",
     "compute-versions": "node ./build/compute-versions.mjs",
-    "dev": "lens-webpack-build --watch",
+    "dev": "node init && lens-webpack-build --watch",
     "precompute-versions": "tsc --pretty --project build"
   },
   "devDependencies": {
     "@freelensapp/typescript": "workspace:^",
     "@freelensapp/webpack": "workspace:^",
     "@types/semver": "^7.7.1",
-    "fast-xml-parser": "^5.3.1",
+    "fast-xml-parser": "^5.3.2",
     "node-fetch": "^3.3.2",
     "semver": "^7.7.3",
     "ts-loader": "^9.5.4",

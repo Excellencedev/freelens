@@ -24,11 +24,11 @@
   "license": "MIT",
   "homepage": "https://freelens.app",
   "scripts": {
-    "build": "lens-webpack-build",
-    "build:dev": "lens-webpack-build",
+    "build": "node init && lens-webpack-build",
+    "build:dev": "node init && lens-webpack-build",
     "clean": "pnpm dlx rimraf@6.1.0 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules",
-    "dev": "lens-webpack-build --watch"
+    "dev": "node init && lens-webpack-build --watch"
   },
   "dependencies": {
     "@freelensapp/application": "workspace:^",

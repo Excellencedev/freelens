@@ -6,7 +6,7 @@
     "name": "Freelens Authors",
     "email": "freelens@freelens.app"
   },
-  "copyright": "© 2025 Freelens Authors",
+  "copyright": "\u00a9 2025 Freelens Authors",
   "license": "MIT",
   "private": false,
   "publishConfig": {
@@ -22,8 +22,8 @@
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.0 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules",
-    "build": "webpack",
-    "build:dev": "webpack"
+    "build": "node init && webpack",
+    "build:dev": "node init && webpack"
   },
   "dependencies": {
     "@freelensapp/node-fetch": "workspace:^",

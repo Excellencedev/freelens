@@ -7,8 +7,8 @@
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.0 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules",
-    "build": "tsc --pretty --project .",
-    "build:dev": "tsc --pretty --project ."
+    "build": "node init && tsc --pretty --project .",
+    "build:dev": "node init && tsc --pretty --project ."
   },
   "type": "module",
   "dependencies": {

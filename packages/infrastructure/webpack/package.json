@@ -20,7 +20,7 @@
   "license": "MIT",
   "homepage": "https://github.com/lensapp/lens",
   "scripts": {
-    "build": "webpack",
+    "build": "node init && webpack",
     "clean": "pnpm dlx rimraf@6.1.0 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules",
     "test:unit": "jest --coverage --runInBand"

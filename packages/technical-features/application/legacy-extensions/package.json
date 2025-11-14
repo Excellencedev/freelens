@@ -25,7 +25,7 @@
   "homepage": "https://freelens.app",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.0 dist",
-    "build": "lens-webpack-build",
+    "build": "node init && lens-webpack-build",
     "clean:node_modules": "pnpm dlx rimraf@6.1.0 node_modules"
   },
   "dependencies": {
