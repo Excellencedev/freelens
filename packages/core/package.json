@@ -46,18 +46,18 @@
     "types/*",
     "tsconfig.json"
   ],
-  "copyright": "© 2023 OpenLens Authors",
+  "copyright": "\u00a9 2023 OpenLens Authors",
   "license": "MIT",
   "author": {
     "name": "Freelens Authors",
     "email": "freelens@freelens.app"
   },
   "scripts": {
-    "build": "webpack --config webpack/library-bundle.ts --progress",
-    "build:dev": "NODE_ENV=development webpack --config webpack/library-bundle.ts --progress",
+    "build": "node init && webpack --config webpack/library-bundle.ts --progress",
+    "build:dev": "node init && NODE_ENV=development webpack --config webpack/library-bundle.ts --progress",
     "clean": "corepack pnpm dlx rimraf@6.1.2 dist static/build",
     "clean:node_modules": "corepack pnpm dlx rimraf@6.1.2 node_modules",
-    "dev": "NODE_ENV=development webpack --config webpack/library-bundle.ts --progress --watch",
+    "dev": "node init && NODE_ENV=development webpack --config webpack/library-bundle.ts --progress --watch",
     "test:unit": "jest",
     "test:watch": "jest --watch --testPathIgnorePatterns integration"
   },

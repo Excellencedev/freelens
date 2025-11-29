@@ -16,8 +16,8 @@
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.2 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.2 node_modules",
-    "build": "webpack",
-    "build:dev": "webpack"
+    "build": "node init && webpack",
+    "build:dev": "node init && webpack"
   },
   "devDependencies": {
     "@freelensapp/typescript": "workspace:^",

@@ -3,7 +3,7 @@
   "productName": "Freelens extensions",
   "description": "Freelens - Free IDE for Kubernetes: extensions",
   "version": "1.7.0-0",
-  "copyright": "© 2024-2025 Freelens Authors",
+  "copyright": "\u00a9 2024-2025 Freelens Authors",
   "license": "MIT",
   "main": "dist/extension-api.js",
   "types": "dist/extension-api.d.ts",
@@ -21,8 +21,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "webpack --config webpack/extensions.ts",
-    "build:dev": "webpack --config webpack/extensions.ts",
+    "build": "node init && webpack --config webpack/extensions.ts",
+    "build:dev": "node init && webpack --config webpack/extensions.ts",
     "clean": "pnpm dlx rimraf@6.1.2 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.2 node_modules"
   },

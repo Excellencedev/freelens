@@ -5,10 +5,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.2 dist",
-    "build": "tsc --pretty --project .",
-    "build:dev": "tsc --pretty --project .",
+    "build": "node init && tsc --pretty --project .",
+    "build:dev": "node init && tsc --pretty --project .",
     "clean:node_modules": "pnpm dlx rimraf@6.1.2 node_modules",
-    "start": "node --experimental-import-meta-resolve ./dist/index.js"
+    "start": "node init && node --experimental-import-meta-resolve ./dist/index.js"
   },
   "files": [
     "dist"

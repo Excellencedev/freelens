@@ -7,9 +7,9 @@
   "scripts": {
     "clean": "pnpm dlx rimraf@6.1.2 dist",
     "clean:node_modules": "pnpm dlx rimraf@6.1.2 node_modules",
-    "build": "tsc --pretty --project .",
-    "build:dev": "tsc --pretty --project .",
-    "start": "node ./dist/index.mjs"
+    "build": "node init && tsc --pretty --project .",
+    "build:dev": "node init && tsc --pretty --project .",
+    "start": "node init && node ./dist/index.mjs"
   },
   "files": [
     "dist"
